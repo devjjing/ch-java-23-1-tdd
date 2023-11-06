@@ -1,5 +1,6 @@
 import org.example.FizzBuzz;
-
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
 
     @Test
@@ -9,13 +10,13 @@ public class FizzBuzzTest {
         int number = 1;
 
         //WHEN
-        int actual = FizzBuzz.fizzBuzz(number)
+        int actual = FizzBuzz.fizzBuzz(number);
 
         //THEN
-        assertEquals(expected:1, actual);
+        assertEquals(1, actual);
     }
 
-    @test
+    @Test
     void fizzbuzzTest_when2_thenReturn2() {
 
         //GIVEN
@@ -25,10 +26,10 @@ public class FizzBuzzTest {
         int actual = FizzBuzz.fizzBuzz(number);
 
         //THEN
-        assertEquals(expected:2, actual);
+        assertEquals(2, actual);
     }
 
-    @test
+    @Test
     void fizzbuzzTest_when3_thenReturnFizz() {
 
         //GIVEN
@@ -38,10 +39,10 @@ public class FizzBuzzTest {
         String actual = FizzBuzz.fizzBuzz(number);
 
         //THEN
-        assertEquals(expected:"Fizz", actual);
+        assertEquals("Fizz", actual);
     }
 
-    @test
+    @Test
     void fizzbuzzTest_when5_thenReturnFizz() {
 
         //GIVEN
@@ -51,10 +52,10 @@ public class FizzBuzzTest {
         String actual = FizzBuzz.fizzBuzz(number);
 
         //THEN
-        assertEquals(expected:"Buzz", actual);
+        assertEquals("Buzz", actual);
     }
 
-    @test
+    @Test
     void fizzbuzzTest_when15_thenReturnFizzBuzz() {
 
         //GIVEN
@@ -64,6 +65,6 @@ public class FizzBuzzTest {
         String actual = FizzBuzz.fizzBuzz(number);
 
         //THEN
-        assertEquals(expected:"Fizz Buzz", actual);
+        assertEquals("Fizz Buzz", actual);
     }
 }
