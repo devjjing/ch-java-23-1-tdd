@@ -10,7 +10,7 @@ public class FizzBuzzTest {
         int number = 1;
 
         //WHEN
-        int actual = FizzBuzz.fizzBuzz(number);
+        int actual = Integer.parseInt(FizzBuzz.fizzBuzz(number));
 
         //THEN
         assertEquals(1, actual);
@@ -23,7 +23,7 @@ public class FizzBuzzTest {
         int number = 2;
 
         //WHEN
-        int actual = FizzBuzz.fizzBuzz(number);
+        int actual = Integer.parseInt(FizzBuzz.fizzBuzz(number));
 
         //THEN
         assertEquals(2, actual);
