@@ -43,7 +43,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void fizzbuzzTest_when5_thenReturnFizz() {
+    void fizzbuzzTest_when5_thenReturnBuzz() {
 
         //GIVEN
         int number = 5;
